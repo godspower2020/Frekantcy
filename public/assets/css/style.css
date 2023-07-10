@@ -2330,8 +2330,35 @@ section {
   padding: 60px 0 30px 0;
 }
 
+#footer .footer-top .col-lg-6 {
+  background: #00579e;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+#footer .footer-top button {
+  margin-top: 2rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#footer .footer-top .footer-contact,
+#footer .footer-top .footer-info {
+  padding: 0 50px;
+}
+
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
+}
+
+#footer .footer-top button .straight-button {
+  display: flex;
+  flex-direction: row;
+}
+
+#footer .footer-top button .straight-button span {
+  padding-left: 20px;
 }
 
 #footer .footer-top .footer-info h3 {

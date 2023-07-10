@@ -6,7 +6,7 @@ import { Home } from '../pages';
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
+      <Routes>   
         <Route path="/" exact element={<Home />} />
       </Routes>
     </BrowserRouter>

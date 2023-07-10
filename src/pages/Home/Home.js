@@ -1,10 +1,12 @@
 import React from 'react'
+import { Toaster } from "react-hot-toast";
 import { Header, Footer } from '../../components'
-import { Box, Hero, ServicesList, SafetyList, Works } from '../../components/HomeComponents'
+import { Box, Hero, Maps, ServicesList, SafetyList, Works } from '../../components/HomeComponents'
 
 const Home = () => {
   return (
     <>
+      <Toaster />
       <Header />
       {/* ======= Hero Section ======= */}
       <Hero />
@@ -145,7 +147,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay={100}>
-                
+                <Maps />
               </div>
             </div>
           </div>
