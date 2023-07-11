@@ -4,6 +4,7 @@ const Hero = () => {
   return (
     <>
         <section id="hero" className="d-flex justify-cntent-center align-items-center">
+          <img src='../../../public/assets/img/rig-3.jpg' />
           <div id="heroCarousel" data-bs-interval={5000} className="container carousel carousel-fade" data-bs-ride="carousel">
             <div className="carousel-item active">
               <div className="carousel-container">

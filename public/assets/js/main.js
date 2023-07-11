@@ -88,7 +88,7 @@
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
-        if (selectTopbar) {
+        if (selectTopbar) { 
           selectTopbar.classList.add('topbar-scrolled')
         }
       } else {

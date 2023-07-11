@@ -6,7 +6,7 @@ import { Box, Hero, Maps, ServicesList, SafetyList, Works } from '../../componen
 const Home = () => {
   return (
     <>
-      <Toaster />
+      <Toaster /> 
       <Header />
       {/* ======= Hero Section ======= */}
       <Hero />
@@ -22,10 +22,10 @@ const Home = () => {
         </section>
         {/* End Icon Boxes Section */}
         {/* ======= About Us Section ======= */}
-        <section id="about" className="about">
+        <section id="vision" className="vision">
           <div className="container" data-aos="fade-up">
             <div className="section-title-left">
-              <h2>About Us</h2>
+              <h2>About Frekantcy</h2>
             </div>
             <div className="row content">
               <div className="col-lg-6">
@@ -53,7 +53,7 @@ const Home = () => {
         </section>
         {/* End About Us Section */}
         {/* ======= Why Us Section ======= */}
-        <section id="why-us" className="why-us">
+        <section id="operation" className="operation">
           <div className="container-fluid">
             <div className="section-title">
               <h2>Services & Operation</h2>
@@ -77,7 +77,7 @@ const Home = () => {
         </section>
         {/* End Why Us Section */}
         {/* ======= Services Section ======= */}
-        <section id="services" className="services">
+        <section id="safety-policy" className="safety-policy">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
               <h2>Our Safety Policy</h2>
@@ -91,22 +91,22 @@ const Home = () => {
         </section>
         {/* End Services Section */}
         {/* ======= Cta Section ======= */}
-        <section id="cta" className="cta">
+        <section id="about" className="about">
           <div className="container">
             <div className="row" data-aos="zoom-in">
               <div className="col-lg-9 text-center text-lg-start">
                 <h3>Want to know more ?</h3>
                 <p> want to know more about us, hit that button to check us out and understand what we stand for.</p>
               </div>
-              <div className="col-lg-3 cta-btn-container text-center">
-                <a className="cta-btn align-middle" href="#">About Us</a>
+              <div className="col-lg-3 about-btn-container text-center">
+                <a className="about-btn align-middle" href="#">About Us</a>
               </div>
             </div>
           </div>
         </section>
-        {/* End Cta Section */}
+        {/* End about Section */}
         {/* ======= Portfoio Section ======= */}
-        <section id="portfolio" className="portfoio">
+        <section id="services" className="services">
           <div className="container" data-aos="fade-up">
             <div className="section-title">
               <h2>Our Works & Services</h2>

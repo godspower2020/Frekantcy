@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from "react-hot-toast";
 import { TailSpin } from 'react-loader-spinner'
@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="footer-top">
             <div className="container">
               <div className="row">
-                <div className="col-lg-6 col-md-6 mt-5 mt-lg-0">
+                <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                   <form role="form" className="php-email-form" onSubmit={handleSubmit}>
                     <div className="row">
                       <div className="col-md-6 form-group">
@@ -52,7 +52,7 @@ const Footer = () => {
                       <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required value={subject} onChange={handleChange} />
                     </div>
                     <div className="form-group mt-3">
-                      <textarea className="form-control" name="message" rows={5} placeholder="Message" required defaultValue={""} value={message} onChange={handleChange} />
+                      <textarea className="form-control" name="message" rows={5} placeholder="Message" required value={message} onChange={handleChange} />
                     </div>
                     <div className="text-center">
                       <button type="submit">
@@ -69,7 +69,7 @@ const Footer = () => {
                     </div>
                   </form>
                 </div>
-                <div className="col-lg-3 col-md-6 footer-contact">
+                <div className="col-lg-3 col-md-6 mt-5 footer-contact">
                   <h4>Contact Us</h4>
                   <p>
                   2, Effurun -Sapele Road, Effurun, Delta State. Nigeria <br /><br />
@@ -77,7 +77,7 @@ const Footer = () => {
                     <strong>Email:</strong> frekantcy2013@gmail.com // frekantcy@yahoo.com<br />
                   </p>
                 </div>
-                <div className="col-lg-3 col-md-6 footer-info">
+                <div className="col-lg-3 col-md-6 mt-5 footer-info">
                   <h3>About Frekantcy</h3>
                   <p>reach us out on social media.</p>
                   <div className="social-links mt-3">
