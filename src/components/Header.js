@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {Link} from 'react-scroll'
+// import {Link} from 'react-scroll'
 
 import{ urlFor, client } from '../lib/sanityClient';
 
