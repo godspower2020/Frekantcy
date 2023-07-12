@@ -127,6 +127,17 @@ p {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
+@media (max-width: 789px) {
+  .topbar {
+    background: rgba(0 87, 158, .9) !important;
+    position: relative !important;
+  }
+
+  .topbar.topbar-scrolled {
+    top: unset;
+  }
+}
+
 .topbar {
   height: 60px;
   padding: 0;
@@ -146,7 +157,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* flex-wrap: wrap; */
     font-size: 12px;
   } 
 }
@@ -191,6 +201,14 @@ p {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+@media (max-width: 789px) {
+  .header {
+    background: rgba(0 87, 158, .9) !important;
+    position: relative !important;
+    top: unset !important;
+  }
+}
+
 .header {
   background: rgba(5, 87, 158, .9);
   transition: all 0.5s;
