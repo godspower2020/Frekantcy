@@ -60,7 +60,7 @@ const Home = () => {
             </div>
             <div className="row">
               <div className="col-lg-5 align-items-stretch position-relative video-box" style={{ backgroundImage: 'url("assets/img/why-us.jpg")' }} data-aos="fade-right">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn mb-4" />
+                {/* <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn mb-4" /> */}
               </div>
               <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
                 <div className="content">

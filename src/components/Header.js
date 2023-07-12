@@ -1,29 +1,37 @@
 import React, { useEffect, useState } from 'react'
-// import {Link} from 'react-scroll'
+import { motion } from 'framer-motion'
+import {Link} from 'react-scroll'
 
 import{ urlFor, client } from '../lib/sanityClient';
 
 const navLinks = [
   { 
     name: 'Home',
+    id: 'hero'
   },
   { 
     name: 'Vision',
+    id: 'vision'
   },
   {
     name: 'Operation',
+    id: 'operation'
   },
   {
-    name: 'OperatiSafety-policyon',
+    name: 'Safety-policy',
+    id: 'safety-policy'
   },
   {
     name: 'About',
+    id: 'about'
   },
   {
     name: 'Services',
+    id: 'services'
   },
   {
     name: 'Contact',
+    id: 'contact'
   },
 ];
 
@@ -31,9 +39,10 @@ const Header = () => {
   const [topbar, setTopbar] = useState('topbar'); 
   const [header, setHeader] = useState('header');
   const [logo, setLogo] = useState([])
-  const [active, setActive] = useState('app__Navbar-menu')
-  const [activeLink, setActiveLink] = useState('active')
+  const [activeNav, setActiveNav] = useState('app__navbar-menu')
+  const [activeLink, setActiveLink] = useState('nav-link scrollto')
   const [toggleIcon, setToggleIcon] = useState('nav__toggler')
+
   
   const headerScrolled = () => {
     window.scrollY > 90 ? setHeader('header header-scrolled') : setHeader('header')  
@@ -53,7 +62,7 @@ const Header = () => {
 
   const navToggle = () => {
     // show & unshow the nav menu
-    active === 'app__Navbar-menu' ? setActive('app__Navbar-menu nav__active') : setActive('app__Navbar-menu') 
+    activeNav === 'app__navbar-menu' ? setActiveNav('app__navbar-menu nav__open') : setActiveNav('app__navbar-menu') 
 
     // ToggleIcon
     toggleIcon === 'nav__toggler' ? setToggleIcon('nav__toggler toggle') : setToggleIcon('nav__toggler')
@@ -83,14 +92,22 @@ const Header = () => {
           ))}
 
             <nav id="navbar" className="navbar">
-              <ul>
-                <li><a className="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a className="nav-link scrollto" href="#vision">Vision</a></li>
-                <li><a className="nav-link scrollto" href="#operation">Operation</a></li>
-                <li><a className="nav-link scrollto" href="#safety-policy">Safety-policy</a></li>
-                <li><a className="nav-link scrollto" href="#about">About</a></li>
-                <li><a className="nav-link scrollto" href="#services">Services</a></li>
-                <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
+              <ul className={activeNav}>
+                  {navLinks.map((link, index) => (
+                    <li>
+                      <Link
+                        key={link + index}
+                        className={`nav-link scrollto ${activeLink}`}
+                        to={link.id}
+                        spy={true} 
+                        smooth={true} 
+                        offset={0} 
+                        duration={0} 
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
               </ul>
               <div onClick={navToggle} className={toggleIcon}>
                 <div className="line1"></div>
