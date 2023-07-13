@@ -30,7 +30,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -128,14 +129,10 @@ p {
 # Top Bar
 --------------------------------------------------------------*/
 @media (max-width: 789px) {
-  .topbar
-  .header {
-    border-bottom: .5px solid #CCC;
-  }
-
   .topbar {
     background: rgba(0 87, 158, .9) !important;
     position: relative !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
   }
 
   .topbar.topbar-scrolled {
@@ -211,6 +208,7 @@ p {
     background: rgba(0 87, 158, .9) !important;
     position: relative !important;
     top: unset !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
   }
 }
 
@@ -262,6 +260,7 @@ p {
 @media (max-width: 991px) {
   .app__navbar-menu {
     position: fixed !important;
+    overflow: hidden;
     display: none;
     top: 0;
     right: 0;
@@ -564,8 +563,16 @@ section {
 }
 
 @media (max-width: 768px) {
-  .section-title-me {
-    padding-top: 60px;
+  .section-title h2,
+  .section-title h3,
+  .section-title-left h2 {
+    font-size: 25px !important;
+    font-weight: 600 !important;
+  }
+
+  .section-title-me h3 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
   }
 }
 
@@ -2302,10 +2309,26 @@ section {
   padding: 60px 0 30px 0;
 }
 
+@media (max-width: 768px) {
+  #footer .footer-top .col-lg-6 {
+    width: 90%;
+    margin: auto;
+  }
+}
+
 #footer .footer-top .col-lg-6 {
   background: #00579e;
   padding: 40px 20px;
   border-radius: 10px;
+  box-shadow: 0 10px 53px 0 rgba(163, 204, 170, 0.1);
+}
+
+#footer .form-group .form-control {
+  background-color: rgba(255, 255, 255, .6) !important;
+}
+
+::placeholder {
+  color: rgba(252, 239, 239, 0.9) !important;
 }
 
 #footer .footer-top button {
@@ -2313,6 +2336,9 @@ section {
   padding: 10px;
   border-radius: 5px;
   border: none;
+  /* background-color: rgba(4, 60, 109, .9);
+  color: #fff; */
+  box-shadow: 0 10px 53px 0 rgba(163, 204, 170, 0.1);
 }
 
 #footer .footer-top .footer-contact,
@@ -2425,6 +2451,12 @@ section {
   line-height: 26px;
 }
 
+@media (max-width: 768px) {
+  #footer .copyright {
+    font-size: 12.8px;
+  }
+}
+
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
@@ -2439,4 +2471,8 @@ section {
 
 #footer .credits a {
   color: #f6b024;
+}
+
+section#shadow-host-companion {
+  display: none !important;
 }

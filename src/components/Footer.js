@@ -9,6 +9,9 @@ const Footer = () => {
   const [formData, setFormData] = useState(initialState);
   const [loading, setLoading] = useState(false)
 
+  const today= new Date()
+  const year= today.getFullYear()
+
   const { name, email, subject, message } = formData;
 
   const handleChange = (e) => {
@@ -93,7 +96,7 @@ const Footer = () => {
           </div>
           <div className="container">
             <div className="copyright">
-              © Copyright <strong><span>Frekantcy</span></strong>. All Rights Reserved
+              © Copyright {year} <strong><span>Frekantcy</span></strong>. All Rights Reserved
             </div>
           </div>
         </footer>

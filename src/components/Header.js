@@ -40,10 +40,8 @@ const Header = () => {
   const [header, setHeader] = useState('header');
   const [logo, setLogo] = useState([])
   const [activeNav, setActiveNav] = useState('app__navbar-menu')
-  const [activeLink, setActiveLink] = useState('nav-link scrollto')
   const [toggleIcon, setToggleIcon] = useState('nav__toggler')
 
-  
   const headerScrolled = () => {
     window.scrollY > 90 ? setHeader('header header-scrolled') : setHeader('header')  
     window.scrollY > 90 ? setTopbar('topbar topbar-scrolled') : setTopbar('topbar')  
@@ -96,8 +94,9 @@ const Header = () => {
                   {navLinks.map((link, index) => (
                     <li>
                       <Link
+                        onClick={navToggle}
                         key={link + index}
-                        className={`nav-link scrollto ${activeLink}`}
+                        className={`nav-link scrollto`}
                         to={link.id}
                         spy={true} 
                         smooth={true} 
