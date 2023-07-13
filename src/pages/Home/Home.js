@@ -99,7 +99,7 @@ const Home = () => {
                 <p> want to know more about us, hit that button to check us out and understand what we stand for.</p>
               </div>
               <div className="col-lg-3 about-btn-container text-center">
-                <a className="about-btn align-middle" href="#">About Us</a>
+                <a className="about-btn align-middle" href="/about">About Us</a>
               </div>
             </div>
           </div>

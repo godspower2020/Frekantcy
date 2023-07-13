@@ -102,6 +102,7 @@ const Header = () => {
                         smooth={true} 
                         offset={0} 
                         duration={0} 
+                        href="/#"
                       >
                         {link.name}
                       </Link>
