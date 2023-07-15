@@ -14,7 +14,7 @@ const Map = () => {
       projectionConfig={{
         rotate: [-10.0, -5.0, 0],
         center: [-5, 4],
-        scale: 1800
+        scale: 1950
       }}
       style={{width: "100%",  height: "100%"}}
     >

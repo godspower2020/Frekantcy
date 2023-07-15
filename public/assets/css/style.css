@@ -26,7 +26,7 @@ h6 {
 }
 
 p {
-  font-size: .9rem;
+  font-size: 1rem;
   line-height: 2;
 }
 
@@ -759,7 +759,7 @@ section {
 .operation .grey {
   color: grey;
   padding-left: 1rem;
-  font-size: 14.3px;
+  font-size: 15px;
 }
 
 @media (min-width: 768px) {
@@ -876,8 +876,9 @@ section {
 
 .safety-policy .service-flex h6 {
   margin: 10px 0 7px 20px;
-  font-size: 14.3px !important;
+  font-size: 15px !important;
   font-family: "Open Sans", sans-serif;
+  color: #777777;
 }
 
 @media (min-width: 768px) {
