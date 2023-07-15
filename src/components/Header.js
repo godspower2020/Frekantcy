@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
+import { useLocation } from "react-router-dom";
 import {Link} from 'react-scroll'
 
 import{ urlFor, client } from '../lib/sanityClient';
@@ -27,7 +27,7 @@ const navLinks = [
   },
   {
     name: 'Services',
-    id: 'services'
+    id: 'work-services'
   },
   {
     name: 'Contact',
@@ -41,6 +41,8 @@ const Header = () => {
   const [logo, setLogo] = useState([])
   const [activeNav, setActiveNav] = useState('app__navbar-menu')
   const [toggleIcon, setToggleIcon] = useState('nav__toggler')
+
+  const location = useLocation()
 
   const headerScrolled = () => {
     window.scrollY > 90 ? setHeader('header header-scrolled') : setHeader('header')  
@@ -73,10 +75,10 @@ const Header = () => {
           <div className="container d-flex align-items-center justify-content-center justify-content-md-between">
             <div className="contact-info d-flex align-items-center">
               <div>
-                <i className="bi bi-envelope-fill" /><a href="mailto:contact@example.com">frekantcy2013@gmail.com // frekantcy@yahoo.com </a>
+                <i className="bi bi-envelope-fill" /><a href="mailto:frekantcy2013@gmail.com">frekantcy2013@gmail.com // frekantcy@yahoo.com</a>
               </div>
               <div>
-                <i className="bi bi-phone-fill phone-icon" /> 08037197217
+                <i className="bi bi-phone phone-icon" /> 08037197217
                 <i className="bi bi-whatsapp phone-icon" /> 08037197217
               </div>
             </div>
@@ -86,10 +88,10 @@ const Header = () => {
         <header className={`${header} fixed-top d-flex align-items-center`}>
           <div className="container d-flex align-items-center justify-content-between">   
           {logo.map((item, index) => (
-            <img key={index} src={urlFor(item.imgUrl).width(40).height(40).url()} alt={item.name}></img>
+            <a href="/"><img key={index} src={urlFor(item.imgUrl).width(40).height(40).url()} alt={item.name}></img></a>
           ))}
 
-            <nav id="navbar" className="navbar">
+            <div id="navbar" className="navbar">
               <ul className={activeNav}>
                   {navLinks.map((link, index) => (
                     <li>
@@ -102,7 +104,6 @@ const Header = () => {
                         smooth={true} 
                         offset={0} 
                         duration={0} 
-                        href="/#"
                       >
                         {link.name}
                       </Link>
@@ -114,7 +115,7 @@ const Header = () => {
                 <div className="line2"></div>
                 <div className="line3"></div>
               </div> 
-            </nav>
+            </div>
           </div>
         </header>
         {/* End Header */}
@@ -123,3 +124,5 @@ const Header = () => {
 }
 
 export default Header
+
+// styles from auth affecting app, please start cleanup now. do it from the top

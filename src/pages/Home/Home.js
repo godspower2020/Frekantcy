@@ -106,9 +106,9 @@ const Home = () => {
         </section>
         {/* End about Section */}
         {/* ======= Portfoio Section ======= */}
-        <section id="services" className="services">
-          <div className="container" data-aos="fade-up">
-            <div className="section-title">
+        <section id="work-services" className="work-services">
+          <div className="" data-aos="fade-up">
+            <div className="container section-title">
               <h2>Our Works & Services</h2>
               <p>Frekantcy Nigeria Enterprises has an array of capabilities in the various sectors, providing quality logistic services and supply for rigs, vessels, industries, offices, homes etc. From electrical to mechanical equipments, emergency response and salvage for all industries. Our skills and experience are constantly evolving, allowing us to provide our clients with a bespoke, fully integrated solution fron project planning and consultancy through to personnel and equipment supply and project execution.</p>
             </div>

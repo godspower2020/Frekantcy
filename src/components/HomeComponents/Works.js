@@ -36,15 +36,15 @@ const Works = () => {
 
   return (
     <>
-        <div className="row">
-            <div className="col-lg-12 mb-5 d-flex justify-content-center">
+        <div className="row filter">
+            <div className="filter-wrapper mb-5 d-flex justify-content-center">
                 {['AC & Refrigeration', 'Electrical Works', 'Mechanical Works', 'Procurement Service'].map((item, index) => (
                     <div
                     key={index}
                     onClick={() => handleWorksFilter(item)}
                     className={`app__work-filter-item ${activeFilter === item ? 'item-active' : ''}`}
                     >
-                    {item}
+                      <p>{item}</p>
                     </div>
                 ))}
             </div>

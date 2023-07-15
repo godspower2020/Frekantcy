@@ -42,7 +42,7 @@ const Footer = () => {
             <div className="container">
               <div className="row">
                 <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                  <form role="form" className="php-email-form" onSubmit={handleSubmit}>
+                  <form role="form" className="email-form" onSubmit={handleSubmit}>
                     <div className="row">
                       <div className="col-md-6 form-group">
                         <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required value={name} onChange={handleChange} />
