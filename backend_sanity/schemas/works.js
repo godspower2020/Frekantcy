@@ -29,6 +29,16 @@ export default {
         type: 'string',
       },
       {
+        name: 'subDescriptionTwo',
+        title: 'Second Sub Work Description',
+        type: 'string',
+      },
+      {
+        name: 'subDescriptionThree',
+        title: 'Third Sub Work Description',
+        type: 'string',
+      },
+      {
         name: 'descriptionTwo',
         title: 'Second Work Description',
         type: 'string',

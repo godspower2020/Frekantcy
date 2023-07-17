@@ -1095,6 +1095,10 @@ section {
   position: relative;
 }
 
+.contact .section-title h2 {
+  margin-top: 0 !important;
+}
+
 .contact .info {
   width: 100%;
 }

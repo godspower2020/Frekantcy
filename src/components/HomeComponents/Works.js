@@ -62,6 +62,8 @@ const Works = () => {
                           <div className='col-lg-6 my-md-5'>
                             <h5 className='work-titles'>{work.titleOne}</h5>
                             <p>{work.descriptionOne}</p>
+                            <p>{work.subDescriptionTwo}</p>
+                            <p>{work.subDescriptionThree}</p>
                           </div>
                           <div className='col-lg-6'>
                             <div className='img-container'>
@@ -81,6 +83,11 @@ const Works = () => {
                               <h5 className='work-titles'>{work.titleThree}</h5>
                               <p>{work.descriptionThree}</p>
                             </div>
+                          </div>
+                        </div>
+                        <div className='text-image-array'>
+                          <div className='row'>
+
                           </div>
                         </div>
                     </div>
