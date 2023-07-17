@@ -95,11 +95,8 @@ const Home = () => {
           <div className="container">
             <div className="row" data-aos="zoom-in">
               <div className="col-lg-9 text-center text-lg-start">
-                <h3>Want to know more ?</h3>
-                <p> want to know more about us, hit that button to check us out and understand what we stand for.</p>
-              </div>
-              <div className="col-lg-3 about-btn-container text-center">
-                <a className="about-btn align-middle" href="/about">About Us</a>
+                <h3>Who We Are ?</h3>
+                <p>tenacious engineers who are well equipped to service your business. our service charge is fair and just, .</p>
               </div>
             </div>
           </div>
