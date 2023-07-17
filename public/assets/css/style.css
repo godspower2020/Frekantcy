@@ -1029,10 +1029,10 @@ section {
 } 
 
 .work-services .work-box {
-  border: dotted 1.5px #ddd;
-  border-radius: 2%;
+  border-bottom: dotted 2px #ddd;
+  border-radius: 4%;
   border-spacing: 2rem;
-  padding: 0 2rem 5rem 2rem;
+  padding: 0 2rem 1rem 2rem;
   margin-bottom: 5rem;
 }
 
@@ -1051,6 +1051,7 @@ section {
 }
 
 .work-services h4.work-title {
+  text-decoration-line: underline;
   font-weight: 600;
   text-align: center;
   margin: 3rem 0 5rem 0;
@@ -1063,7 +1064,14 @@ section {
 }
 
 .work-services h5.work-titles {
+  font-size: 18px;
   font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .work-services h5.work-titles {
+    font-size: 16.5px;
+  }
 }
 
 .work-services .img-container {

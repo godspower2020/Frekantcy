@@ -87,7 +87,12 @@ const Works = () => {
                         </div>
                         <div className='text-image-array'>
                           <div className='row'>
-
+                            <div className='col-lg-9'>
+                              {/* <i className="bi bi-check2"></i> */}
+                              {/* {filterWorks.map((item) => (
+                                item
+                              ))} */}
+                            </div>
                           </div>
                         </div>
                     </div>

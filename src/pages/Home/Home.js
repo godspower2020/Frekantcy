@@ -96,7 +96,7 @@ const Home = () => {
             <div className="row" data-aos="zoom-in">
               <div className="col-lg-9 text-center text-lg-start">
                 <h3>Who We Are ?</h3>
-                <p>tenacious engineers who are well equipped to service your business. our service charge is fair and just, .</p>
+                <p>Tenacious Engineers who are well equipped to service your business.</p>
               </div>
             </div>
           </div>

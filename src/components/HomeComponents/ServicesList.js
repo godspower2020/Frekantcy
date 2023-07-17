@@ -18,7 +18,7 @@ const [servicesList, setServicesList] = useState([])
         <div>
             {servicesList.map((item, index) => (
                 <div key={index} className='services-list'>
-                    <i className="bi bi-3x bi-check2"></i>
+                    <i className="bi bi-check2"></i>
                     <span className='grey'>{item.name}</span> <br />
                 </div>
             ))}

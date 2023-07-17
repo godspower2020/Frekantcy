@@ -57,8 +57,8 @@ export default {
         }
       },
       {
-        name: 'imgUrl',
-        title: 'ImageUrl',
+        name: 'imgArray',
+        title: 'ImageArray',
         type: 'array',
         of: [
           { type: 'image', },
@@ -80,14 +80,24 @@ export default {
        ]
       },
       {
-        name: 'worksList',
-        title: 'Works List',
+        name: 'equipmentArrays',
+        title: 'Equipment Arrays',
         type:'array',
         of: [
          {
-           name:'workList',
-           title:'Work List', 
+           name:'equipmentArray',
+           title:'Equipment Array', 
            type:'string'
+         }
+       ]
+      },
+      {
+        name: 'repairsList',
+        title: 'Repairs List',
+        type:'array',
+        of: [
+         {
+          type:'repairs'
          }
        ]
       },
