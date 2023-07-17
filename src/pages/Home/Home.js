@@ -106,7 +106,7 @@ const Home = () => {
         </section>
         {/* End about Section */}
         {/* ======= Portfoio Section ======= */}
-        <section id="work-services" className="work-services">
+        <section id="work-services" className="work-services mb-5">
           <div className="" data-aos="fade-up">
             <div className="container section-title">
               <h2>Our Works & Services</h2>

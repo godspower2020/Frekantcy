@@ -1,5 +1,5 @@
 export default {
-    name: 'workTitle',
+    name: 'works',
     title: 'Kind Of Work',
     type: 'document',
     fields: [
@@ -21,11 +21,6 @@ export default {
     {
       name: 'titleThree',
       title: 'Third Title',
-      type: 'string',
-    },
-    {
-      name: 'description',
-      title: 'Initial Description',
       type: 'string',
     },
       {
@@ -81,7 +76,7 @@ export default {
         of: [
          {
            name:'workList',
-           title:'Work List',
+           title:'Work List', 
            type:'string'
          }
        ]
@@ -93,3 +88,5 @@ export default {
       }
     ]
   };
+
+  

@@ -26,7 +26,7 @@ h6 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: .938rem;
   line-height: 2;
 }
 
@@ -983,47 +983,99 @@ section {
 # services % Works
 --------------------------------------------------------------*/
 .work-services .app__work-filter-item {
-  padding: 0.2rem .8rem;
+  padding: 0.15rem .6rem;
   background-color: #ffffffb3;
   color: rgb(0, 87, 158);
-  font-size: .8rem;
-  font-weight: 200;
   cursor: pointer;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.6s ease-in-out;
   margin: 0.5rem;
   border: 1px solid #00579e;
   border-radius: 15px !important;
 }
 
+.work-services .app__work-filter-item:hover {
+  background-color: #00579e;
+  color: #fff;
+}
+
+.work-services .app__work-filter-item.item-active {
+  background-color: #00579e;
+  color: #fff;
+}
+
 .work-services .app__work-filter-item p {
-  font-size: 15px;
+  font-size: 12px;
   white-space: nowrap;
   margin: 0 !important;
 }
 
 .filter-wrapper {
-  /* position: absolute; */
-  overflow-x: auto;
+  /* overflow-x: auto; */
 }
 
 .filter-wrapper::-webkit-scrollbar {
   /* width: 0; */
 }
 
-@media screen and (min-width: 701px) {
-  .work-services .app__work-filter-item {
-    padding: 0.4rem 1rem;
+@media screen and (min-width: 791px) {
+
+} 
+
+@media screen and (min-width: 991px) {
+  .work-services .app__work-filter-item p {
     font-size: 1rem;
     font-weight: 500;
   }
 } 
 
-.work-services .app__work-filter-item:hover {
-  /* border-bottom: 2px solid #f1a40a; */
+.work-services .work-box {
+  border: dotted 1.5px #ddd;
+  border-radius: 2%;
+  border-spacing: 2rem;
+  padding: 0 2rem 5rem 2rem;
+  margin-bottom: 5rem;
 }
 
-.item-active {
-  /* border-bottom: 2px solid #f1a40a; */
+.work-services .work-box .work-two-three .row {
+  display: flex;
+  justify-content: center;
+}
+
+.work-services .work-box .work-two-three .row .g-t-m-5 {
+  margin-top: 5rem;
+}
+
+.work-services h4.work-title,
+.work-services h5.work-titles {
+  color: #00579e;
+}
+
+.work-services h4.work-title {
+  font-weight: 600;
+  text-align: center;
+  margin: 3rem 0 5rem 0;
+}
+
+@media (max-width: 990px) {
+  .work-services h4.work-title {
+    margin: 3rem 0 3rem 0;
+  }
+}
+
+.work-services h5.work-titles {
+  font-weight: 400;
+}
+
+.work-services .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto !important;
+}
+
+.work-services img.img {
+  height: 60%;
+  width: 60%;
 }
 
 /*--------------------------------------------------------------
