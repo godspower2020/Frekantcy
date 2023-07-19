@@ -38,7 +38,7 @@ const Works = () => {
     <>
         <div className="row filter">
             <div className="filter-wrapper mb-5 d-flex justify-content-center flex-wrap">
-                {['AC & Refrigeration', 'Electrical Works', 'Mechanical Works', 'Procurement Service', 'All'].map((item, index) => (
+                {['All', 'AC & Refrigeration', 'Electrical Works', 'Mechanical Works', 'Procurement Service'].map((item, index) => (
                     <div
                     key={index}
                     onClick={() => handleWorksFilter(item)}
@@ -86,14 +86,54 @@ const Works = () => {
                           </div>
                         </div>
                         <div className='text-image-array'>
-                          <div className='row'>
-                            <div className='col-lg-9'>
-                              {/* <i className="bi bi-check2"></i> */}
-                              {/* {filterWorks.map((item) => (
-                                item
-                              ))} */}
+                          {work.isRepairsList ? 
+                            <div className='row repairs-equipments'>
+                              <div className='col-lg-12'>
+                                <div className=''>
+                                  {work.repairsList.map((item, index) => (
+                                    <div key={index} className='pb-2'>
+                                      <i className="bi bi-check2"></i>
+                                      <span className='m-3'>{item}</span> <br />
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
                             </div>
-                          </div>
+                            :
+                            ""
+                          }
+
+                          {work.isEquipmentsList ? 
+                            <div className='row repairs-equipments'>
+                              <div className='col-lg-12'>
+                                <p>Equipments includes:</p>
+                                <div>
+                                  {work.equipmentsList.map((item, index) => (
+                                    <div  key={index} className='pb-2'>
+                                      <i className="bi bi-check2"></i>
+                                      <span className='m-3'>{item}</span> <br />
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                            :
+                            ""
+                          }
+
+                          {work.isImgList ? 
+                            <div className='row mt-3'>
+                              <div className='col-lg-12'>
+                                <div>
+                                  {work.imgList.map((item, index) => (
+                                    <img className='px-4' key={index} alt='' src={urlFor(item).width(90).height(90).url()} /> 
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                            :
+                            ""
+                          }
                         </div>
                     </div>
                 ))}

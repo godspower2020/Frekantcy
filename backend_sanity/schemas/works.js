@@ -57,17 +57,6 @@ export default {
         }
       },
       {
-        name: 'imgArray',
-        title: 'ImageArray',
-        type: 'array',
-        of: [
-          { type: 'image', },
-        ],
-        options: {
-          hotspot: true,
-        }
-      },
-      {
         name: 'tags',
         title: 'Tags',
         type:'array',
@@ -80,32 +69,55 @@ export default {
        ]
       },
       {
-        name: 'equipmentArrays',
-        title: 'Equipment Arrays',
+        name: 'isEquipmentsList',
+        title: 'Does this work have equipments you want to list out ?',
+        type: 'boolean'
+      },
+      {
+        name: 'equipmentsList',
+        title: 'Equipments List',
         type:'array',
         of: [
          {
-           name:'equipmentArray',
-           title:'Equipment Array', 
+           name:'equipment',
+           title:'Equipment', 
            type:'string'
          }
        ]
+      },
+      {
+        name: 'isRepairsList',
+        title: 'Does this work have repairs you want to list out ?',
+        type: 'boolean'
       },
       {
         name: 'repairsList',
         title: 'Repairs List',
         type:'array',
         of: [
-         {
-          type:'repairs'
-         }
+          {
+            name:'repair',
+            title:'Repair', 
+            type:'string'
+          }
        ]
       },
       {
-        name:'appleColor',
-        title:'apple Color',
-        type:'string'
-      }
+        name: 'isImgList',
+        title: 'Does this work have images you want to list out ?',
+        type: 'boolean'
+      },
+      {
+        name: 'imgList',
+        title: 'Images List',
+        type: 'array',
+        of: [
+          { type: 'image', },
+        ],
+        options: {
+          hotspot: true,
+        }
+      },
     ]
   };
 

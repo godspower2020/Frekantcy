@@ -1086,6 +1086,12 @@ section {
   width: 60%;
 }
 
+.work-services .text-image-array .repairs-equipments span {
+  color: #777;
+  font-size: 15.8px;
+  letter-spacing: 1.6px;
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
