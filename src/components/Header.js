@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation } from "react-router-dom";
 import {Link} from 'react-scroll'
 
 import{ urlFor, client } from '../lib/sanityClient';
@@ -41,8 +40,6 @@ const Header = () => {
   const [logo, setLogo] = useState([])
   const [activeNav, setActiveNav] = useState('app__navbar-menu')
   const [toggleIcon, setToggleIcon] = useState('nav__toggler')
-
-  const location = useLocation()
 
   const headerScrolled = () => {
     window.scrollY > 90 ? setHeader('header header-scrolled') : setHeader('header')  

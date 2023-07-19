@@ -86,6 +86,7 @@ const Works = () => {
                           </div>
                         </div>
                         <div className='text-image-array'>
+
                           {work.isRepairsList ? 
                             <div className='row repairs-equipments'>
                               <div className='col-lg-12'>
@@ -122,11 +123,11 @@ const Works = () => {
                           }
 
                           {work.isImgList ? 
-                            <div className='row mt-3'>
+                            <div className='row mt-3 image-array'>
                               <div className='col-lg-12'>
                                 <div>
                                   {work.imgList.map((item, index) => (
-                                    <img className='px-4' key={index} alt='' src={urlFor(item).width(90).height(90).url()} /> 
+                                    <img className='' key={index} alt='' src={urlFor(item)} /> 
                                   ))}
                                 </div>
                               </div>
@@ -134,6 +135,7 @@ const Works = () => {
                             :
                             ""
                           }
+                          
                         </div>
                     </div>
                 ))}
