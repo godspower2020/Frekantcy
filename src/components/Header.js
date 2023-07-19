@@ -40,6 +40,7 @@ const Header = () => {
   const [logo, setLogo] = useState([])
   const [activeNav, setActiveNav] = useState('app__navbar-menu')
   const [toggleIcon, setToggleIcon] = useState('nav__toggler')
+  const [menuHomeBody, setMenuHomeBody] = useState('')
 
   const headerScrolled = () => {
     window.scrollY > 90 ? setHeader('header header-scrolled') : setHeader('header')  
@@ -60,9 +61,12 @@ const Header = () => {
   const navToggle = () => {
     // show & unshow the nav menu
     activeNav === 'app__navbar-menu' ? setActiveNav('app__navbar-menu nav__open') : setActiveNav('app__navbar-menu') 
-
+    
     // ToggleIcon
     toggleIcon === 'nav__toggler' ? setToggleIcon('nav__toggler toggle') : setToggleIcon('nav__toggler')
+
+    // no scroll on nav open
+    menuHomeBody === '' ? setMenuHomeBody('no-scroll') : setMenuHomeBody('')
   }
 
   return (
@@ -72,11 +76,14 @@ const Header = () => {
           <div className="container d-flex align-items-center justify-content-center justify-content-md-between">
             <div className="contact-info d-flex align-items-center">
               <div>
-                <i className="bi bi-envelope-fill" /><a href="mailto:frekantcy2013@gmail.com">frekantcy2013@gmail.com // frekantcy@yahoo.com</a>
+                <i className="bi bi-envelope-fill" />
+                <a href="mailto:frekantcy2013@gmail.com" target='_blank' rel="noreferrer">frekantcy2013@gmail.com</a>
+                <span> // </span>
+                <a href="mailto:frekantcy@yahoo.com" target='_blank' rel="noreferrer">frekantcy@yahoo.com</a>
               </div>
               <div>
-                <i className="bi bi-phone phone-icon" /> 08037197217
-                <i className="bi bi-whatsapp phone-icon" /> 08037197217
+                <i className="bi bi-phone phone-icon" /><a href='tel:08037197217' target='_blank' rel="noreferrer">08037197217</a> 
+                <i className="bi bi-whatsapp phone-icon" /><a href='https://wa.me/08037197217' target='_blank' rel="noreferrer">08037197217</a> 
               </div>
             </div>
           </div>

@@ -110,7 +110,7 @@ const Works = () => {
                                 <p>Equipments includes:</p>
                                 <div>
                                   {work.equipmentsList.map((item, index) => (
-                                    <div  key={index} className='pb-2'>
+                                    <div key={index} className='pb-2'>
                                       <i className="bi bi-check2"></i>
                                       <span className='m-3'>{item}</span> <br />
                                     </div>
