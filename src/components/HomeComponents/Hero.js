@@ -4,23 +4,17 @@ const Hero = () => {
   return (
     <>
         <section id="hero" className="d-flex justify-cntent-center align-items-center">
-          <img src='../../../public/assets/img/rig-3.jpg' />
           <div id="heroCarousel" data-bs-interval={5000} className="container carousel carousel-fade" data-bs-ride="carousel">
             <div className="carousel-item active">
               <div className="carousel-container">
                 <h2 className="animate__animated animate__fadeInDown">WELCOME TO <span>FREKANTCY</span></h2>
-                <p className="animate__animated animate__fadeInUp">repair and maintenance 
-of the Industrial and Marine sector</p>
-                {/* <a href="#about" className="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> */}
+                <p className="animate__animated animate__fadeInUp">repair and maintenance of the Industrial and Marine sector</p>
               </div>
             </div>
             <div className="carousel-item">
               <div className="carousel-container">
                 <h2 className="animate__animated animate__fadeInDown">VALUE ENGINEERING</h2>
-                <p className="animate__animated animate__fadeInUp">providing high quality 
-services at the best value to our 
-clients.</p>
-                {/* <a href="#about" className="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> */}
+                <p className="animate__animated animate__fadeInUp">providing high quality services at the best value to our clients</p>
               </div>
             </div>
             <a className="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
