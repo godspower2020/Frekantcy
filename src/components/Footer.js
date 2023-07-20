@@ -23,7 +23,7 @@ const Footer = () => {
     setLoading(true)
     e.preventDefault()
     
-    emailjs.sendForm('service_2tuxsjv', 'template_54abgyb', e.target, '_qrR0cXB1aI8pF9JG')
+    emailjs.sendForm('service_pfaghfe', 'template_54abgyb', e.target, '_qrR0cXB1aI8pF9JG')
       .then((result) => {
           setLoading(false)
           setFormData(initialState)

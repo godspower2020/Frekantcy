@@ -71,58 +71,58 @@ const Header = () => {
 
   return (
     <>
-        {/* ======= Top Bar ======= */}
-        <div className={`${topbar} fixed-top d-flex align-items-center`}>
-          <div className="container d-flex align-items-center justify-content-center justify-content-md-between">
-            <div className="contact-info d-flex align-items-center">
-              <div>
-                <i className="bi bi-envelope-fill" />
-                <a href="mailto:frekantcy2013@gmail.com" target='_blank' rel="noreferrer">frekantcy2013@gmail.com</a>
-                <span> // </span>
-                <a href="mailto:frekantcy@yahoo.com" target='_blank' rel="noreferrer">frekantcy@yahoo.com</a>
-              </div>
-              <div>
-                <i className="bi bi-phone phone-icon" /><a href='tel:08037197217' target='_blank' rel="noreferrer">08037197217</a> 
-                <i className="bi bi-whatsapp phone-icon" /><a href='https://wa.me/08037197217' target='_blank' rel="noreferrer">08037197217</a> 
-              </div>
+      {/* ======= Top Bar ======= */}
+      <div className={`${topbar} fixed-top d-flex align-items-center`}>
+        <div className="container d-flex align-items-center justify-content-center justify-content-md-between">
+          <div className="contact-info d-flex align-items-center">
+            <div>
+              <i className="bi bi-envelope-fill" />
+              <a href="mailto:frekantcy2013@gmail.com" target='_blank' rel="noreferrer">frekantcy2013@gmail.com</a>
+              <span> // </span>
+              <a href="mailto:frekantcy@yahoo.com" target='_blank' rel="noreferrer">frekantcy@yahoo.com</a>
+            </div>
+            <div>
+              <i className="bi bi-phone phone-icon" /><a href='tel:+2348037197217' target='_blank' rel="noreferrer">08037197217</a> 
+              <i className="bi bi-whatsapp phone-icon" /><a href='https://wa.me/+2348037197217' target='_blank' rel="noreferrer">08037197217</a> 
             </div>
           </div>
         </div>
-        {/* ======= Header ======= */}
-        <header className={`${header} fixed-top d-flex align-items-center`}>
-          <div className="container d-flex align-items-center justify-content-between">   
-          {logo.map((item, index) => (
-            <a href="/"><img key={index} src={urlFor(item.imgUrl).width(40).height(40).url()} alt={item.name}></img></a>
-          ))}
+      </div>
+      {/* ======= Header ======= */}
+      <header className={`${header} fixed-top d-flex align-items-center`}>
+        <div className="container d-flex align-items-center justify-content-between">   
+        {logo.map((item, index) => (
+          <a href="/"><img key={index} src={urlFor(item.imgUrl).width(40).height(40).url()} alt={item.name}></img></a>
+        ))}
 
-            <div id="navbar" className="navbar">
-              <ul className={activeNav}>
-                  {navLinks.map((link, index) => (
-                    <li>
-                      <Link
-                        onClick={navToggle}
-                        key={link + index}
-                        className={`nav-link scrollto`}
-                        to={link.id}
-                        spy={true} 
-                        smooth={true} 
-                        offset={0} 
-                        duration={0} 
-                      >
-                        {link.name}
-                      </Link>
-                    </li>
-                  ))}
-              </ul>
-              <div onClick={navToggle} className={toggleIcon}>
-                <div className="line1"></div>
-                <div className="line2"></div>
-                <div className="line3"></div>
-              </div> 
-            </div>
+          <div id="navbar" className="navbar">
+            <ul className={activeNav}>
+                {navLinks.map((link, index) => (
+                  <li>
+                    <Link
+                      onClick={navToggle}
+                      key={link + index}
+                      className={`nav-link scrollto`}
+                      to={link.id}
+                      spy={true} 
+                      smooth={true} 
+                      offset={0} 
+                      duration={0} 
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+            <div onClick={navToggle} className={toggleIcon}>
+              <div className="line1"></div>
+              <div className="line2"></div>
+              <div className="line3"></div>
+            </div> 
           </div>
-        </header>
-        {/* End Header */}
+        </div>
+      </header>
+      {/* End Header */}
     </>
   )
 }

@@ -10,13 +10,13 @@ const Box = () => {
     client.fetch(query)
       .then((data) => {
         setBox(data)
-      }) 
+      })  
   }, [])
 
   return (
     <>
       {box.map((item, index) => (
-        <div key={index} class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+        <div key={index} class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay={item.dataAosDelay}>
           <div class="icon-box">
             <div class="icon">
               <div className='box-images'>

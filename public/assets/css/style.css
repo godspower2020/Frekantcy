@@ -590,6 +590,12 @@ section {
   font-size: 26px;
 }
 
+@media (max-width: 991px) {
+  .vision .content h3 {
+    margin-top: 2rem;
+  }
+}
+
 .vision .content ul {
   list-style: none;
   padding: 0;

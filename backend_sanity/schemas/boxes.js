@@ -21,5 +21,10 @@ export default{
               hotspot: true,
             },
         },
+        {
+            name:'dataAosDelay',
+            title:'Data-Aos-Delay',
+            type:'string'
+        }
     ]
 }
