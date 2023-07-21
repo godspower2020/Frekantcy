@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Frekantcy Limited/ Welcome</title>
+        <title>Frekantcy Limited/ Welcome.</title>
         <meta name="description" content="Frekantcy (Nig.) Enterprisees is an Engineering company providing a complete range of engineering, procurement and maintenance services for the Marine/Oil & Gas." />
       </Helmet>
       <Toaster /> 
