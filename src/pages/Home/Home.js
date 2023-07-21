@@ -1,4 +1,5 @@
 import React from 'react'
+import {Helmet} from "react-helmet";
 import { Toaster } from "react-hot-toast";
 import { Header, Footer } from '../../components'
 import { Box, Hero, Maps, ServicesList, SafetyList, Works } from '../../components/HomeComponents'
@@ -6,6 +7,10 @@ import { Box, Hero, Maps, ServicesList, SafetyList, Works } from '../../componen
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Frekantcy / Welcome</title>
+        <meta name="description" content="providing a complete range of engineering, procurement and maintenance services for the Marine/Oil & Gas." />
+      </Helmet>
       <Toaster /> 
       <Header />
       {/* ======= Hero Section ======= */}
@@ -60,7 +65,6 @@ const Home = () => {
             </div>
             <div className="row">
               <div className="col-lg-5 align-items-stretch position-relative video-box" style={{ backgroundImage: 'url("assets/img/why-us.jpg")' }} data-aos="fade-right">
-                {/* <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn mb-4" /> */}
               </div>
               <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
                 <div className="content">

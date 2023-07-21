@@ -1,10 +1,25 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./app/App";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { hydrate, render } from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+import { Home } from './pages';
+
+const App = (
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>   
+        <Route path="/" exact element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
-);
+)
+
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(App, rootElement);
+} else {
+  render(App, rootElement);
+}
+
+
+ 
