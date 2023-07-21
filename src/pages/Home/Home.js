@@ -1,5 +1,4 @@
 import React from 'react'
-import {Helmet} from "react-helmet";
 import { Toaster } from "react-hot-toast";
 import { Header, Footer } from '../../components'
 import { Box, Hero, Maps, ServicesList, SafetyList, Works } from '../../components/HomeComponents'
@@ -7,10 +6,6 @@ import { Box, Hero, Maps, ServicesList, SafetyList, Works } from '../../componen
 const Home = () => {
   return (
     <>
-      <Helmet>
-        <title>Frekantcy Limited/ Welcome.</title>
-        <meta name="description" content="Frekantcy (Nig.) Enterprisees is an Engineering company providing a complete range of engineering, procurement and maintenance services for the Marine/Oil & Gas." />
-      </Helmet>
       <Toaster /> 
       <Header />
       {/* ======= Hero Section ======= */}
