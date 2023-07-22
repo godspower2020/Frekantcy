@@ -40,19 +40,19 @@ const Header = () => {
   const [logo, setLogo] = useState([])
   const [activeNav, setActiveNav] = useState('app__navbar-menu')
   const [toggleIcon, setToggleIcon] = useState('nav__toggler')
+  const [homeId, setHomeId] = useState('home')
   const [menuHomeBody, setMenuHomeBody] = useState('')
-
-  // make sure link active underline shows up on both mobile and desktop view
-  document.Width < '991px' ? navLinks.id = 'home' : navLinks.id = 'hero'
-
-  console.log(navLinks.id);
-
+  
   const headerScrolled = () => {
     window.scrollY > 90 ? setHeader('header header-scrolled') : setHeader('header')  
     window.scrollY > 90 ? setTopbar('topbar topbar-scrolled') : setTopbar('topbar')  
   }
   
   useEffect(() => {
+    // make sure link active underline shows up on both mobile and desktop
+    // window.innerWidth > '991px' && setHomeId('hero')
+    // console.log(window.innerWidth);
+
     header && headerScrolled()
 
     const query = '*[_type == "logo"]';
