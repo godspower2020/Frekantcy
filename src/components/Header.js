@@ -6,7 +6,7 @@ import{ urlFor, client } from '../lib/sanityClient';
 const navLinks = [
   { 
     name: 'Home',
-    id: 'hero'
+    id: 'home'
   },
   { 
     name: 'Vision',
@@ -42,6 +42,11 @@ const Header = () => {
   const [toggleIcon, setToggleIcon] = useState('nav__toggler')
   const [menuHomeBody, setMenuHomeBody] = useState('')
 
+  // make sure link active underline shows up on both mobile and desktop view
+  document.Width < '991px' ? navLinks.id = 'home' : navLinks.id = 'hero'
+
+  console.log(navLinks.id);
+
   const headerScrolled = () => {
     window.scrollY > 90 ? setHeader('header header-scrolled') : setHeader('header')  
     window.scrollY > 90 ? setTopbar('topbar topbar-scrolled') : setTopbar('topbar')  
@@ -66,22 +71,23 @@ const Header = () => {
     toggleIcon === 'nav__toggler' ? setToggleIcon('nav__toggler toggle') : setToggleIcon('nav__toggler')
 
     // no scroll on nav open
-    menuHomeBody === '' ? setMenuHomeBody('no-scroll') : setMenuHomeBody('')
+    // menuHomeBody === '' ? setMenuHomeBody('no-scroll') : setMenuHomeBody('')
+    // document.body.style.overflow = "hidden" ((prevOverflowHidden) => !prevOverflowHidden);
   }
 
   return (
-    <>
+    <div id='home'>
       {/* ======= Top Bar ======= */}
       <div className={`${topbar} fixed-top d-flex align-items-center`}>
         <div className="container d-flex align-items-center justify-content-center justify-content-md-between">
           <div className="contact-info d-flex align-items-center">
-            <div>
+            <div className='topbar-emails'>
               <i className="bi bi-envelope-fill" />
               <a href="mailto:frekantcy2013@gmail.com" target='_blank' rel="noreferrer">frekantcy2013@gmail.com</a>
               <span> // </span>
               <a href="mailto:frekantcy@yahoo.com" target='_blank' rel="noreferrer">frekantcy@yahoo.com</a>
             </div>
-            <div>
+            <div className='topbar-phones'>
               <i className="bi bi-phone phone-icon" /><a href='tel:+2348037197217' target='_blank' rel="noreferrer">08037197217</a> 
               <i className="bi bi-whatsapp phone-icon" /><a href='https://wa.me/+2348037197217' target='_blank' rel="noreferrer">08037197217</a> 
             </div>
@@ -123,7 +129,7 @@ const Header = () => {
         </div>
       </header>
       {/* End Header */}
-    </>
+    </div>
   )
 }
 
