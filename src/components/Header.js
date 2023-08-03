@@ -49,7 +49,7 @@ const Header = () => {
   }
   
   useEffect(() => {
-    // make sure link active underline shows up on both mobile and desktop
+    // make sure Home link active underline shows up on both mobile and desktop
     // window.innerWidth > '991px' && setHomeId('hero')
     // console.log(window.innerWidth);
 
@@ -134,5 +134,3 @@ const Header = () => {
 }
 
 export default Header
-
-// styles from auth affecting app, please start cleanup now. do it from the top
