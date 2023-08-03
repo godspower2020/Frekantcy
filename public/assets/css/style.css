@@ -496,7 +496,7 @@ section {
 
 @media (min-width: 768px) {
   .icon-boxes .icon-box .description {
-    font-size: 15.6px;
+    font-size: 15px;
     line-height: 2;
   }
 }
@@ -952,6 +952,7 @@ textarea {
 #footer .footer-top button {
   margin-top: 2rem;
   padding: 10px;
+  color: #3f3f3f;
   border-radius: 5px;
   border: none;
   box-shadow: 0 10px 53px 0 rgba(163, 204, 170, 0.1);
@@ -1042,4 +1043,30 @@ textarea {
 
 section#shadow-host-companion {
   display: none !important;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #0880e8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  cursor: pointer;
+  border: none;
+}
+ 
+.back-to-top i {
+  color: #fff;
+  font-size: 25px;
+  animation: animate .5s infinite ease alternate;
+}
+
+@keyframes animate {
+  100% {
+    transform: translateY(1.5px);
+  }
 }

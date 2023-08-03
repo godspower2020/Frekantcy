@@ -1,7 +1,7 @@
 import React from 'react'
 import { Toaster } from "react-hot-toast";
 import { Header, Footer } from '../../components'
-import { Box, Hero, Maps, ServicesList, SafetyList, Works } from '../../components/HomeComponents'
+import { Box, Hero, Maps, ServicesList, SafetyList, Works, ScrollTop } from '../../components/HomeComponents'
 
 const Home = () => {
   return (
@@ -153,8 +153,10 @@ const Home = () => {
       {/* End #main */}
 
       <Footer />
+
       {/* <div id="preloader"></div> */}
-      <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short" /></a>
+
+      <ScrollTop />
 
     </>
   )
