@@ -671,6 +671,7 @@ section {
 
 .safety-policy .service-flex h6 {
   margin: 10px 0 7px 20px;
+  line-height: 1.4;
   font-size: 15px !important;
   font-family: "Open Sans", sans-serif;
   color: #777777;
