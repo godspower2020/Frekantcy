@@ -123,9 +123,9 @@ const Works = () => {
                           }
 
                           {work.isImgList ? 
-                            <div className='row mt-3 image-array'>
+                            <div className='row mt-3 image-array'> 
                               <div className='col-lg-12'>
-                                <div>
+                                <div className='cen'>
                                   {work.imgList.map((item, index) => (
                                     <img className='' key={index} alt='' src={urlFor(item)} /> 
                                   ))}

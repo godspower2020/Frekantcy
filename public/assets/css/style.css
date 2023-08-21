@@ -821,24 +821,25 @@ section {
   }
 }
 
+.work-services .text-image-array .cen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto !important;
+}
+
 .work-services .text-image-array .image-array img {
-  width: 160px;
-  height: 160px;
-  border: 2px solid #777;
-  border-radius: 50%;
-  margin: 8px 20px 20px 0;
-  box-shadow: -1px 8px 6px -1px rgba(0,0,0,0.59);
--webkit-box-shadow: -1px 8px 6px -1px rgba(0,0,0,0.59);
--moz-box-shadow: -1px 8px 6px -1px rgba(0,0,0,0.59);
+  width: 200px;
+  padding: 8px 20px 20px 20px;
 }
 
 @media (max-width: 768px) {
   .work-services .text-image-array .image-array img {
-    width: 70px;
-    height: 70px;
-    margin: 4px 6px 6px 0;
+    width: 140px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Contact
