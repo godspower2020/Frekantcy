@@ -117,7 +117,7 @@ const Works = () => {
                                   ))}
                                 </div>
                               </div>
-                            </div>
+                            </div> 
                             :
                             ""
                           }
@@ -126,8 +126,11 @@ const Works = () => {
                             <div className='row mt-3 image-array'> 
                               <div className='col-lg-12'>
                                 <div className='cen'>
-                                  {work.imgList.map((item, index) => (
-                                    <img className='' key={index} alt='' src={urlFor(item)} /> 
+                                  {work.imgListText.map((item, index) => (
+                                    <div className='text-bottom'>
+                                      <img className='' key={index} alt='' src={urlFor(item.img)} /> 
+                                      <p>{item.name}</p>
+                                    </div>
                                   ))}
                                 </div>
                               </div>

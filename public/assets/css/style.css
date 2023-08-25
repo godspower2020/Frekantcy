@@ -670,7 +670,7 @@ section {
 }
 
 .safety-policy .service-flex h6 {
-  margin: 10px 0 7px 20px;
+  margin: 10px 0 2px 20px !important;
   line-height: 1.5;
   font-size: 15px !important;
   font-family: "Open Sans", sans-serif;
@@ -679,7 +679,7 @@ section {
 
 @media (min-width: 768px) {
   .safety-policy .service-flex h6 {
-    margin: 10px 0 2px 20px;
+    margin: 10px 0 7px 20px !important;
     letter-spacing: 1.8px;
     font-size: 15.5px !important;
   }
@@ -825,21 +825,50 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   margin: 0 auto !important;
+  padding-top: 20px;
 }
 
 .work-services .text-image-array .image-array img {
   width: 200px;
-  padding: 8px 20px 20px 20px;
+  padding: 8px 30px 20px 30px;
+}
+
+.work-services .text-image-array .text-bottom {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  height: 100% !important;
+  margin-bottom: 3rem;
+  width: 200px !important;
 }
 
 @media (max-width: 768px) {
   .work-services .text-image-array .image-array img {
     width: 140px;
   }
+
+  .work-services .text-image-array .text-bottom {
+    width: 140px !important;
+  }
 }
 
+.work-services .text-image-array .text-bottom p {
+  margin: 0;
+  color: #777;
+  font-size: 16.2px;
+  letter-spacing: 1.1px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .work-services .text-image-array .text-bottom p { 
+    font-size: 13px;
+    letter-spacing: normal;
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact

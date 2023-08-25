@@ -6,7 +6,7 @@ export default {
     {
       name: 'title',
       title: 'Initial Title',
-      type: 'string',
+      type: 'string', 
     },
     {
       name: 'titleOne',
@@ -108,16 +108,15 @@ export default {
         type: 'boolean'
       },
       {
-        name: 'imgList',
-        title: 'Images List',
-        type: 'array',
-        of: [
-          { type: 'image', },
-        ],
-        options: {
-          hotspot: true,
-        }
-      },
+        name:'imgListText',
+        title:'Image List with Text',
+        type:'array',
+        of:[
+            { 
+                type:'imgList'
+            }
+        ]
+    },
     ]
   };
 
