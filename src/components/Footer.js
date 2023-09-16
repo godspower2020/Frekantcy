@@ -15,7 +15,7 @@ const Footer = () => {
   const { name, email, subject, message } = formData;
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target; 
     setFormData({ ...formData, [name]: value });
   };
 
@@ -61,7 +61,7 @@ const Footer = () => {
                       <button type="submit">
                       {loading ? 
                         <div className='straight-button'>
-                          <TailSpin height="20" width="20" radius="9" color="blue" ariaLabel="loading" wrapperStyle wrapperClass /> 
+                          <TailSpin height="20" width="20" radius="1" color="blue" ariaLabel="loading" wrapperStyle wrapperClass /> 
                           <span>sending...</span>
                         </div> :
                         <>
