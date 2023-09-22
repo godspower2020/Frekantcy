@@ -65,7 +65,7 @@ const Footer = () => {
                           <span>sending...</span>
                         </div> :
                         <>
-                          Send message
+                          Send message 
                         </>               
                         }
                       </button>
